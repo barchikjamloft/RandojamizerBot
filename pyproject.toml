@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "jam_randomizer_bot"
+version = "0.1.0"
+description = ""
+authors = ["Yakovlev Kll"]
+license = "UNLICENSED"
+
+[tool.poetry.scripts]
+dev = "jam_randomizer_bot.main:run"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiogram = "^2.20"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

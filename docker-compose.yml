@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  randojamizer_bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      # outside:inside
+      - 7000:7000
+    env_file: .env
+
